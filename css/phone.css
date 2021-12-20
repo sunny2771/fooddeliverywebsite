@@ -1,0 +1,74 @@
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 4px;  
+}
+#logo img{
+    height: 62px;
+}
+
+
+/* Home Section  */
+#home{
+    padding: 29px 110px;
+    height: 430px;
+}
+#home::before{
+    height: 650px;
+}
+#home p{
+    margin: 15px -82px;
+    font-size: 13px;
+}
+#home h3{
+    font-size: 28px;
+}
+.btn{
+    font-size: 16px;
+    padding: 8px 28px;
+}
+
+
+/* Services Section  */
+#services{
+flex-direction: column;
+}
+#services .box{
+    margin: 10px -6px;
+}
+.heading1{
+    margin: 25px 20px;
+    font-size: 42px;
+}
+
+
+/* Client section  */
+#clients{
+    flex-wrap: wrap;
+}
+#clients img{
+    width: 85px;
+    height: auto;
+}
+
+
+/* contact section  */
+#contact-item form {
+    width: 70px;
+}
+#contact-item{
+    width: 22%;
+}
+#contact-item input, #contact-item textarea{
+    padding: 6px 20px;
+    width: 280px;
+    font-size: 20px;
+}
+
+
+
+
+

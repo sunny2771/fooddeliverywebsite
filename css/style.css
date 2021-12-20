@@ -1,0 +1,290 @@
+body{
+    background: url();
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    width: 100vw;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar  */
+#navbar{
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    background-color: #bba988;
+    font-family: 'Bree Serif', serif;
+    position: sticky;
+    top: 0px;
+    backface-visibility: visible;
+}
+
+/* logo and image  */
+/* #logo{
+    margin: 0px 20px;
+}
+
+#logo img{
+    margin: 3px 6px;
+    height: 48px;
+} */
+
+/* List styling */
+
+#navbar ul{
+    display: flex;
+    margin: 10px -39px;
+}
+
+#navbar ul li{
+    list-style: none;
+    margin: 5px 16px;
+    
+}
+
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 5px 8px;
+
+}
+
+#navbar ul li :hover{
+    color: black;
+    background-color: white;
+    /* border: 2px solid red; */
+    border-radius: 20px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: brown;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.4;
+}
+
+/* Home section  */
+ #home{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 530px;
+
+} 
+
+#home::before{
+    content: "";
+    background: url(../Foodimages/background.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -3;
+    opacity: 0.8;
+}
+
+/* Utility classes */
+.heading{
+    font-size: 2.5rem;
+    color: #a21d1d;
+    margin: 5px 4px;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    font-family: 'Bree Serif', serif;
+    margin: -1px 16px;
+    text-align: center;
+    font-size: 1.21rem;
+}
+
+.btn{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px 26px;
+    border: 2px solid red;
+    background-color: rgb(138, 18, 18);
+    color: white;
+    border-radius: 22px;
+    font-size: 1rem;
+    margin: 25px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: black;
+    background-color: red;
+}
+
+/* services section  */
+.heading1{
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    margin: 46px 20px;
+    font-size: 42px;
+    position: relative;
+    top: 64px;
+}
+#services{
+    margin: 64px 0px;;
+    display: flex;
+    flex-direction: row;
+}
+#services .box{
+    border: 2px solid green;
+    padding: 30px 16px;
+    margin: -8px 24px;
+    border-radius: 23px;
+    background-color: #f9f0f2;
+
+}
+#services .box img{
+    height: 145px;
+    display: block;
+    margin: auto;
+}
+.heading2{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.6rem;
+    margin: 6px 8px
+}
+.box p{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* clients section  */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section{
+    /* height: 270px; */
+    position: relative;
+    bottom: 58px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../contactusimages/client.jpg);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+.client-item img{
+    height: 74px;
+}
+.heading3{
+    font-family: 'Bree Serif', serif;
+    margin: 14px 32px;
+    text-align: center;
+    font-size: 38px;
+    text-shadow: 1px 2px 2px #572cc7;
+}
+.client-item{
+    padding: 24px 30px;
+}
+
+/* contact section  */
+#contact{
+    margin: -92px 0px;
+    position: relative;
+    height: 395px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url(../contactusimages/contactus.jpg) no-repeat center center/cover;
+    z-index: -3;
+    opacity: 0.8;
+
+}
+.heading4{
+    font-family: 'Bree Serif', serif;
+    margin: 33px 44px;
+    padding: 22px 2px;
+    text-align: center;
+    font-size: 42px;
+    text-shadow: 3px 1px 5px pink;
+}
+#contact-item{
+    margin: -24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-item form{
+    position: relative;
+    text-align: center;
+}
+#contact-item label{
+    font-style: italic;
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+#contact-item input{
+    padding: 8px 90px;
+    width: 291px;
+    top: 0px;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 40px;
+    border-radius: 10px;
+}
+#pho{   
+    position: relative;   
+    right: 42px;
+}
+
+#phone{   
+    right: 44px;  
+}
+.form-item{
+    text-align: center;
+}
+#message{
+    font-size: 112px;
+}
+.bton{
+    background-color: #4a4acc;
+    color: white;
+    border-radius: 6px;
+    font-size: 23px;
+    padding: 7px 18px;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 54px;
+    cursor: pointer;
+}
+.bton:hover{
+    color: black;
+    background-color: pink;
+    border: 2px solid rgb(138, 18, 18);
+}
+
+
+footer{
+    margin: 68px -42px;
+    background-color: black;
+    color: white;
+    padding: 25px 25px;
+    text-align: center;
+    font-size: 22px;
+    width: 99.5vw;
+}
+
